@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Quality Shoes</h1>
+    </div>
+    <div class="container">
+        <div>
+        <img id="shoee" src="shoe1.png" alt="image">
+        <div class="text-overlay">REEBOX</div>
+        <p>$550</p>
+    </div>
+    <div>
+        <img id="shoee" src="shoe2.png" alt="image">
+        <p>JORDAN</p>
+        <p>$650</p>
+    </div>
+    <div>
+        <img id="shoee" src="shoe3.png" alt="image">
+        <p>GALAXY</p>
+        <p>$850</p>
+    </div>
+        <div>
+            <img id="shoee" src="shoe4.png" alt="image">
+            <p>AIR-FORCE</p>
+            <p>$300</p>
+        </div>
+    
+    </div>
+    </div>
+
+    <div class="container2">
+        <div>
+        <img id="shoees" src="heel1.png" alt="image">
+        <p>WEDGE</p>
+        <p>$350</p>
+    </div>
+    <div>
+        <img id="shoees2" src="heel2.png" alt="image">
+        <p>SCARPIN</p>
+        <p>$200</p>
+    </div>
+    <div>
+        <img id="shoees3" src="heel7.png" alt="image">
+        <p>STILETTOE</p>
+        <p>$700</p>
+    </div>
+        <div>
+            <img id="shoees4" src="heel4.png" alt="image">
+            <p>MULE</p>
+            <p>$290</p>
+            
+        </div>
+    
+    </div>
+    </div>
+
+    <script>
+        // Select the images
+        const images = document.querySelectorAll('img');
+    
+        // Apply animation styles to each image
+        images.forEach((img) => {
+          img.style.animation = 'rotateAnimation 10s infinite linear';
+        });
+      </script>
+    <script src="index.js"></script>
+</body>
+</html>

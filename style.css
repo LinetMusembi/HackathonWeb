@@ -1,0 +1,69 @@
+@keyframes rotateAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+ body{
+    background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0%;
+      padding: 0%;
+ 
+
+  }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+   
+  .container div {
+    margin: 10px;
+  }
+  
+  .container img {
+    width: 300px;
+    height: 350px;
+  }
+  .container2{
+    display: flex;
+  }
+  #shoees{
+    width: 60%;
+    height: 90%;
+    position: relative;
+    background-color: #EBF2FF;
+    border-radius: 15px;
+     
+  }
+  #shoees2{
+    width: 85%;
+    height: 90%;
+    position: relative;
+    right: 30%;
+    background-color: #EBF2FF;
+    border-radius: 15px;
+  }
+  #shoees3{
+    width: 160%;
+     height: 90%;
+    position: relative;
+    right: 30%;
+    background-color: #EBF2FF;
+    border-radius: 15px;
+  } 
+ #shoees4{
+    width: 160%;
+    height: 90%;
+    position: relative;
+    left: 50%;
+    background-color: #EBF2FF;
+    border-radius: 15px;
+  }
+  .container2{
+    padding-left: 2%;
+  }
+  .head{
+    text-align-last: center;
+  }

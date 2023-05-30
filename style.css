@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(77, 62, 62);
+   
+}
+#advert{
+    text-align: center;
+    color: white;
+    border: solid 2px black;
+    font-size: 2em;
+    border-radius: 1em;
+}
+#advert:hover{
+    background-image: linear-gradient(#D42B70,black);
+    transform: translateY(-15px);
+    border-radius: 1em;
+    transition: bacground 5s, transform 5s;
+}
+
+
+  /* ......................... */
+
+  
+  .dress {
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
+    gap: 5em;
+  } 
+  .dress:hover {
+    background-image: linear-gradient(#052125,#D42B70 ); 
+    transform: translateY(-15px);
+    border-radius: 1em;
+    animation-name: dressAnimation;
+    animation-duration: 2s;
+  }
+  
+  .dress:hover #dres:nth-child(2) {
+    animation-name: exchangeAnimation2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .dress:hover #dres:nth-child(4) {
+    animation-name: exchangeAnimation4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  .dress:hover #dres:nth-child(6) {
+    animation-name: exchangeAnimation4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+ 
+  @keyframes exchangeAnimation2 {
+    50% {
+      transform: translateX(-100%);
+    }
+  } 
+
+
+  @keyframes exchangeAnimation4 {
+    50% {
+      transform: translateX(-100%);
+    }
+  } 
+
+  @keyframes exchangeAnimation6 {
+    50% {
+      transform: translateX(-100%);
+    }
+  } 
+
+
+/* .................... */
+
+
+.dressing{
+    display: flex;
+    position: relative;
+}
+  .dressing i {
+    top: 50%;
+     height: 44px;
+     width: 44px;
+     color: black;
+     cursor: pointer;
+     font-size: 1.15rem;
+     position: absolute;
+      text-align: center;
+     line-height: 44px;
+      background:  gray;
+     border-radius: 50%;
+     transform: translateY(-50%);
+     transition: transform 0.1s linear;
+ }
+ .dressing i:active {
+     transform: translateY(-50%) scale(0.9);
+ }
+ .dressing i:hover {
+     font-weight: bolder;
+ }
+ .dressing i:first-child {
+     left: -12px;
+     display: none;
+ }
+ .dressing i:last-child {
+     right: -22px;
+ }
+ .dressing .dress{
+     font-size: 0px;
+     cursor: pointer;
+     overflow: hidden;
+     white-space: nowrap;
+     scroll-behavior: smooth;
+ }
+ .dress.dragging {
+     cursor: grab;
+     scroll-behavior: auto;
+ }
+ .dress.dragging img {
+     pointer-events: none;
+ } 
+ .dress img:first-child {
+    margin-left: 0px;
+} 

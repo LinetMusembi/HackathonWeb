@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section class="women" id="women">
+<h1 class="wel3">Update your wardrode</h1>
+<h2 class="wel4">Trending Tops</h2>
+
+<div class="clicker">
+    <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+   <div class="box">
+       <img src="clothes/body-suits79.jpg" class="im1" draggable="false">
+       <div class="content">
+           <h3>Solid slim</h3>
+       </div>
+   </div>
+   <div class="box">
+       <img src="clothes/coloured-tops78.jpg" class="im2" draggable="false">
+       <div class="content">
+           <h3>Crisscross Tops</h3>
+       </div>
+   </div>
+   <div class="box">
+       <img src="clothes/crop73.jpg" class="im3" draggable="false">
+       <div class="content">
+           <h3>Sleeveless</h3>
+       </div>
+   </div>
+
+   <div class="box">
+    <img src="clothes/mockneck70.jpg" alt="" class="im4" draggable="false">
+    <div class="content">
+        <h3>mockneck70</h3>
+    </div>
+   </div>
+  
+
+ <div class="box" >
+ <img src="clothes/sweatshirt72.jpg" alt="" class="im5" draggable="false">
+ <div class="content">
+    <h3>Sweatshirt</h3>
+ </div>
+ </div>
+  <div class="box">
+    <img src="clothes/T-shirt74.jpg" alt="" class="im6" draggable="false">
+    <div class="content">
+      <h3>T-shirt</h3>  
+    </div>
+    <!-- <p class="ll">Flarred Trousers</p>
+        <P id="pp">Sizes</P>
+        <button id="but">S</button>
+        <button id="but">M</button>
+        <button id="but">L</button>
+        <button id="but">XL</button> -->
+  </div>
+<!-- 
+  <div class="box">
+    <img src="clothes/tops-77.jpg" alt="" class="im7" draggable="false">
+    <div class="content">
+        <h3>Tops</h3>
+    </div>
+  </div> -->
+
+  <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
+</div>
+</section>
+
+
+
+<div class="container">
+<div class="contact">
+<h2>Get in touch</h2>
+ <p>Phone: +254(7236591406)</p>
+ <p>Email:fashionhouse@gmail.com</p>
+ <p>Address:18 korongo road street Karen,Nairobi,Kenya</p>
+ 
+</div>
+
+<div class="table">
+    <h3>Talk to us</h3>
+<form id="contactForm">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name" required>
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" placeholder="Your email address" required>
+  
+  <label for="phone number">Phone number</label>
+  <input type="text" id="number" name="number" placeholder="Your Phone number" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+  
+  <input type="submit" value="Submit">
+</form>
+</div>
+</div>
+<script src="fashion.js"></script>
+<script src="https://kit.fontawesome.com/a5e3955037.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+<script>
+
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  
+  const formData = new FormData(contactForm);
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const message = formData.get("message");
+
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Message:", message);
+
+  contactForm.reset();
+});
+</script>

@@ -1,0 +1,290 @@
+
+.wel4{
+    text-align: center;
+}
+.wel3{
+    font-size: 40px;
+}
+.box img{
+   display: flex;
+   justify-content: space-between;
+    /* grid-template-columns: repeat(8,1fr); */
+    
+}
+.contact h2{
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+.contact{
+    margin-top: 40px;
+    padding-top: 10%;
+}
+ .contact p{
+ font-size: 20px;
+  margin-top: 20px; 
+ text-align: center;
+} 
+.table{
+    text-align: center; 
+    margin-top: 10%;
+    width: 70%;
+     padding-right: 5px; 
+}
+/* .women .clicker .box img{
+    width: 100%;
+    height: 100vh;
+}  */
+ /* img{
+    width: 100%;
+    height: 100%;
+ 
+}  */
+
+ img{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.clicker {
+    display: flex;
+    position: relative;
+}
+/* .box{
+   padding: 0px 2rem;
+   margin: 0px 2rem;
+} */
+.table{
+  margin-left: 20%;
+}
+
+.clicker i {
+   top: 50%;
+    height: 44px;
+    width: 44px;
+    color: black;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+     text-align: center; 
+    line-height: 44px;
+     background:  gray; 
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+ .clicker i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+.clicker i:hover {
+    font-weight: bolder;
+}
+.clicker i:first-child {
+    left: -12px;
+    display: none;
+}
+.clicker i:last-child {
+    right: -22px;
+} 
+ .clicker .box{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.box .dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.box .dragging img {
+    pointer-events: none;
+}
+
+.box img:first-child {
+    margin-left: 0px;
+} 
+ .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+.clicker .box:hover img{
+    transform: scale(1.2);
+}
+
+.box:hover img{
+    transform: scale(1.2);
+}
+.box content{
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+  left: 0; right: 0;
+  padding: 40px;
+ z-index: 5;
+ transition: 0.5s ease;
+ 
+}
+
+/* #but{
+    width: 35px;
+    border-radius: 6px;
+    border: grey solid;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#but:hover{
+    width: 30px;
+    background-color: grey;
+    color: white;
+} */
+
+.container {
+    width: 500px;
+    margin: 20px auto;
+  }
+  .container{
+    display: flex;
+  }
+  /* .contact{
+    margin-right: 40%;
+  } */
+  h1 {
+    text-align: center;
+  }
+  form {
+    margin-top: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  textarea {
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  input[type="submit"] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 60px;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+
+
+
+
+
+  .clicker{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem,1fr));
+    gap: 2rem;
+    margin-left: 2%;
+    margin-top: 1%;
+  } 
+  .clicker .box{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+   .clicker .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .category{
+    position: relative;
+   margin-top: 100%;
+   background-color: #F7E7CE;
+  }
+     .clicker .box:hover img{
+    transform: scale(1.2);
+  } 
+  .clicker .box .content{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: var(--hover);
+    display: none;
+  }
+ .clicker .box .content h3{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+  }
+  .clicker .box:hover .content{
+    display: flex;
+  } 
+
+
+
+
+  @media only screen and (max-width: 767px) {
+    .wel3 {
+      font-size: 30px;
+    }
+    .contact h2 {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+    .contact p {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .container {
+      width: 100%;
+      margin: 20px 10px;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+    }
+    input[type="submit"] {
+      width: 100%;
+    }
+  }
+  
+ 
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .wel3 {
+      font-size: 36px;
+    }
+    .contact h2 {
+      font-size: 18px;
+      margin-top: 60px;
+    }
+    .contact p {
+      font-size: 18px;
+      margin-top: 18px;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .wel3 {
+      font-size: 40px;
+    }
+    .container {
+      width: 60%;
+    }
+  }
